@@ -13806,6 +13806,12 @@ Percentage of the images in human_files_short is  100 %
 <p><img src="images/sample_cnn.png" alt="Sample CNN"></p>
 <p><strong>Question 4:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  If you chose to use the hinted architecture above, describe why you think that CNN architecture should work well for the image classification task.</p>
 <p><strong>Answer:</strong></p>
+<p>I used Convolutional Layers with increasing numbers of filters and decreased the dimensionality with Maxpooling layers for each layer.
+By doing so, I can filter out necessary information and focus on more specific characteristics, layer by layer.
+Dropout Layers were utilized in order to prevent the overfitting problems.
+Global Average Pooling layer was used beacause by reducing the total number of parameters, or Object localiztion, it can be connected to our final Dense layer.
+In the final dense layer, softmax activation function came into action, for there are more than two classifications.</p>
+<p>The reason CNN should work well for the image classification task is beacuse CNN extracts features almost automatically extracts features without users specifying which features to look for. It also doesn't lose much of data of spatial interactions between pixels, which are crucial in classifying images.</p>
 
 </div>
 </div>
